@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jam Vibe - Tune in. Vibe out</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0cdb8d32ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="Quality">
+        <img src="logo3.png" alt="Jam Vibe Logo"/>
+        Jam Vibe
+      </li>
+      <li><a href="#top" class="nav-link">Home</a></li>
+      <li><a href="#songs" class="nav-link">Songs</a></li>
+      <li><button id="toggleDark">🌙</button></li>
+    </ul>
+  </nav>
+
+  <div id="top"></div>
+
+  <div class="container" id="songs">
+    <div class="songList"> 
+      <h2>Best of Songs : MoRe of WhAt yOu liKe</h2>
+      <div>
+       
+        <div class="songItem" data-index="0">
+          <img src="artist1.jpg" alt="Artist 1">
+          <span class="songName">May be the Last Time</span>
+          <span class="songDuration">4:29</span>
+          <i class="fa-regular songItemPlay fa-circle-play"></i>
+        </div>
+        <div class="songItem" data-index="1">
+          <img src="artist2.jpg" alt="Artist 2">
+          <span class="songName">Find a Way</span>
+          <span class="songDuration">2:45</span>
+          <i class="fa-regular songItemPlay fa-circle-play"></i>
+        </div>
+        <div class="songItem" data-index="2">
+          <img src="artist3.jpg" alt="Artist 3">
+          <span class="songName">Last Song</span>
+          <span class="songDuration">4:11</span>
+          <i class="fa-regular songItemPlay fa-circle-play"></i>
+        </div>
+        <div class="songItem" data-index="3">
+          <img src="artist4.jpg" alt="Artist 4">
+          <span class="songName">Give Yourself Away</span>
+          <span class="songDuration">3:39</span>
+          <i class="fa-regular songItemPlay fa-circle-play"></i>
+        </div>
+        <div class="songItem" data-index="4">
+          <img src="artist5.jpg" alt="Artist 5">
+          <span class="songName">Around The Corner</span>
+          <span class="songDuration">1:44</span>
+          <i class="fa-regular songItemPlay fa-circle-play"></i>
+        </div>
+        <div class="songItem" data-index="5">
+          <img src="artist6.jpg" alt="Artist 6">
+          <span class="songName">Medicine Man</span>
+          <span class="songDuration">2:56</span>
+          <i class="fa-regular songItemPlay fa-circle-play"></i>
+        </div>
+        <div class="songItem" data-index="6">
+          <img src="artist7.jpg" alt="Artist 7">
+          <span class="songName">Luka Chupi</span>
+          <span class="songDuration">0:13</span>
+          <i class="fa-regular songItemPlay fa-circle-play"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="emoji-bg">
+      <span>🎵</span><span>🎶</span><span>🎧</span><span>🎸</span><span>🎷</span><span>🎹</span><span>🥁</span>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <input type="range" id="myProgressBar" min="0" value="0" max="100">
+    <div class="icons">
+      <i class="fa-solid fa-backward-step" id="previous"></i>
+      <i class="fa-regular fa-circle-play" id="masterplay"></i>
+      <i class="fa-solid fa-forward-step" id="next"></i>
+    </div>
+    <div class="songInfo">
+      <img src="music.gif" width="42px" alt="Now Playing" id="gif">
+      <span class="masterSongName">May be the Last Time - Chester Bennington</span>
+      <span id="currentTime">0:00</span> / <span id="totalDuration">4:29</span>
+    </div>
+    <div class="volumeControl">
+      <i class="fa-solid fa-volume-high" id="volumeIcon"></i>
+      <input type="range" id="volumeBar" min="0" max="100" value="50">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
